@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('oswald-regular-webfont.eot');
+    src: url('oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oswald-regular-webfont.woff2') format('woff2'),
+         url('oswald-regular-webfont.woff') format('woff'),
+         url('oswald-regular-webfont.ttf') format('truetype'),
+         url('oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.position{
+	display: inline-block;
+	height: 30px;
+	overflow: hidden;
+  width:14px;
+}
+
+
+.digit 
+{
+  color: #585858;
+  display: block;
+  font-family:"oswald_regularregular";
+  font-weight: normal;
+  line-height: 33px;
+}
+
+
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:30px;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}
+
+#countdown > span 
+{
+  display: inline-block;
+  width:80px;
+  text-align: center;
+  height:70px;
+  overflow:hidden;
+}
+
+#countdown
+{
+  float:left;
+  width:100%;
+  text-align:center;
+  margin-top:-10px;
+}
+
+.digitsss
+{
+float:left;
+width:100%;
+font-weight:bold;
+font-size:20px;
+}
+
+
+.daysss {
+  float: left;
+  text-transform: capitialize;
+  width: 100%;
+}
+
+.shopifysecure {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top:10px;
+}
+
+@media only screen and (max-width : 450px) 
+{
+  #countdown > span
+  {
+    width:70px;
+  }
+  .daysss 
+  {
+    letter-spacing: 0;
+    text-transform: capitalize;
+  }
+}
